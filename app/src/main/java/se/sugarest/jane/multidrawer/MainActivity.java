@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mImageButtonLeft = (ImageButton) findViewById(R.id.img_Left);
         mImageButtonRight = (ImageButton) findViewById(R.id.img_Right);
 
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
 
         mImageButtonLeft.setOnClickListener(new View.OnClickListener() {
             @Override

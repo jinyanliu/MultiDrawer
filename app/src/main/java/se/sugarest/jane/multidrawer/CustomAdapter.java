@@ -47,7 +47,7 @@ public class CustomAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         final Holder holder = new Holder();
         View rootView;
-        rootView = mInflater.inflate(R.layout.gdmain, null);
+        rootView = mInflater.inflate(R.layout.list_gridview, null);
         holder.tv = (TextView) rootView.findViewById(R.id.tv_hello_world);
         holder.iv = (ImageView) rootView.findViewById(R.id.iv_five);
         holder.tv.setText(mResult[position]);
